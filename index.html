@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio | Creative Developer & Designer</title>
+  <meta name="description" content="Portofolio pribadi dan profil profesional Creative Developer & UI/UX Designer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">Portofolio<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">Tentang</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Ganti Tema">
+          <span class="theme-icon">☀️</span>
+        </button>
+        <button id="menuToggle" class="menu-btn" aria-label="Buka Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero container" id="about">
+      <div class="hero-badge">✨ Tersedia untuk Proyek Freelance & Kolaborasi</div>
+      <h1 class="hero-title">
+        Membangun Pengalaman Digital yang <span class="gradient-text">Modern &amp; Bermakna</span>
+      </h1>
+      <p class="hero-subtitle">
+        Halo! Saya seorang Frontend Developer &amp; UI/UX Enthusiast yang berfokus pada pembuatan aplikasi web yang cepat, responsif, dan estetis.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Lihat Karya Saya</a>
+        <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span>
+          <p>Tahun Pengalaman</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-target="25">0</span><span class="stat-plus">+</span>
+          <p>Proyek Selesai</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
+          <p>Komitmen Kualitas</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section container" id="skills">
+      <div class="section-header">
+        <span class="section-tag">Keahlian</span>
+        <h2>Teknologi &amp; Perangkat</h2>
+        <p>Berbagai teknologi modern yang saya gunakan untuk mewujudkan ide menjadi produk digital.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>Frontend Development</h3>
+          <p>HTML5, CSS3, JavaScript (ES6+), TypeScript, React, Next.js, Tailwind CSS.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>UI/UX Design</h3>
+          <p>Figma, Design Systems, Wireframing, Prototyping, Responsive Web Design.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🛠️</div>
+          <h3>Tools &amp; Workflow</h3>
+          <p>Git, GitHub, VS Code, REST APIs, Vite, Web Performance Optimization.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section container" id="projects">
+      <div class="section-header">
+        <span class="section-tag">Portofolio</span>
+        <h2>Proyek Pilihan</h2>
+        <p>Beberapa hasil karya terbaru yang telah saya kerjakan.</p>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="web">Web App</button>
+        <button class="filter-btn" data-filter="ui">UI/UX</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-category="web">
+          <div class="project-preview preview-1">
+            <span>Dashboard Analytics</span>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Web App</span>
+            <h3>FinTrack Analytics</h3>
+            <p>Dashboard interaktif untuk memantau keuangan pribadi dan visualisasi arus kas secara real-time.</p>
+            <div class="project-links">
+              <a href="#projects" class="link-item">Live Demo →</a>
+              <a href="#projects" class="link-item">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="ui">
+          <div class="project-preview preview-2">
+            <span>E-Commerce Design</span>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">UI/UX</span>
+            <h3>Lumina Store</h3>
+            <p>Desain sistem dan antarmuka belanja modern dengan pengalaman checkout yang ringkas.</p>
+            <div class="project-links">
+              <a href="#projects" class="link-item">Studi Kasus →</a>
+              <a href="#projects" class="link-item">Figma</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <div class="project-preview preview-3">
+            <span>Productivity App</span>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Web App</span>
+            <h3>FocusFlow Workspace</h3>
+            <p>Aplikasi manajemen tugas minimalis dengan fitur Pomodoro timer dan catatan berbasis markdown.</p>
+            <div class="project-links">
+              <a href="#projects" class="link-item">Live Demo →</a>
+              <a href="#projects" class="link-item">Source Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section container" id="contact">
+      <div class="contact-box">
+        <div class="section-header">
+          <span class="section-tag">Kontak</span>
+          <h2>Mari Berkolaborasi!</h2>
+          <p>Punya ide proyek menarik atau sekadar ingin menyapa? Kirimkan pesan melalui formulir di bawah ini.</p>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Alamat Email</label>
+              <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="4" placeholder="Ceritakan tentang proyek atau kebutuhan Anda..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Kirim Pesan</button>
+          <p id="formFeedback" class="form-feedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Portofolio. Dibuat dengan dedikasi &amp; kode bersih.</p>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
